@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_Cola"
+    tools:context="com.example.gps_app.MainEditorActivity">
+
+
+    <TextView
+        android:id="@+id/tv_MainEditorTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/mainEditorTitle"
+        android:textStyle="bold|italic"
+        android:textSize="28sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_MainEditorDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_MainEditorTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/mainEditorDescription"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btn_MainEditorAddRoute"
+        android:layout_below="@id/tv_MainEditorDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_style"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:text="@string/mainEditorAddBtn"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:id="@+id/sv_MainEditorRoutesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_MainEditorAddRoute"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_MainEditorExistingRoutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+    </ScrollView>
+
+</RelativeLayout>

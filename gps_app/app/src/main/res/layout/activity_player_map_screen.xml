@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_Cola"
+    tools:context=".PlayerMapScreen">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/gm_PlayerMapScreen"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.example.gps_app.MainPlayerActivity" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cl_PlayerMapScreenPlayerInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="15dp"
+        android:background="@color/Blue_Cola"
+        >
+
+    <ImageView
+        android:id="@+id/iv_PlayerMapScreenPeople"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/walking" />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenYourLocation"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@id/iv_PlayerMapScreenPeople"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/playerMapScreenYourLocation"
+        android:textStyle="bold|italic"
+        android:textSize="14sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenYourLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@id/tv_PlayerMapScreenYourLocation"
+        app:layout_constraintTop_toBottomOf="@id/tv_PlayerMapScreenYourLatitude"
+        app:layout_constraintTop_toTopOf="@id/cl_PlayerMapScreenPlayerInfo"
+        android:text="@string/playerMapScreenYLat"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenYourLatitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_PlayerMapScreenYourLatitude"
+        app:layout_constraintTop_toTopOf="@id/cl_PlayerMapScreenPlayerInfo"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenYourLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_PlayerMapScreenYourLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PlayerMapScreenYourLatitude"
+        android:layout_marginStart="8dp"
+        android:text="@string/playerMapScreenYLng"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenYourLongitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintStart_toEndOf="@id/tv_PlayerMapScreenYourLongitude"
+        app:layout_constraintTop_toBottomOf="@id/tv_PlayerMapScreenYourLatitudeValue"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/iv_PlayerMapScreenChest"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PlayerMapScreenYourLongitudeValue"
+        android:src="@drawable/treasure" />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenTargetLocation"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@id/iv_PlayerMapScreenChest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PlayerMapScreenYourLongitude"
+        android:text="@string/playerMapScreenTargetLocation"
+        android:textStyle="bold|italic"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenTargetLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/tv_PlayerMapScreenTargetLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PlayerMapScreenYourLongitudeValue"
+        android:text="@string/playerMapScreenTLat"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenTargetLatitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_PlayerMapScreenTargetLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PlayerMapScreenYourLongitudeValue"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenTargetLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tv_PlayerMapScreenTargetLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PlayerMapScreenTargetLatitude"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/playerMapScreenTLng"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenTargetLongitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintStart_toEndOf="@id/tv_PlayerMapScreenTargetLongitude"
+        app:layout_constraintTop_toBottomOf="@id/tv_PlayerMapScreenTargetLatitudeValue"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/iv_PlayerMapScreenStar"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/star"/>
+
+    <TextView
+        android:id="@+id/tv_PlayerMapScreenStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:textSize="14sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_PlayerMapScreenStar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_PlayerMapScreenStar"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

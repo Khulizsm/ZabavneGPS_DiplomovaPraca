@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- START CODE -->
+    <string name="file_name">maps.txt</string>
+    <string name="errorFindSharedPreferences">Nenašiel sa súbor obsahujúci „SharedPreferences” !</string>
+    <string name="errorWriteSharedPreferences">Pri zápise do súboru so „SharedPreferences” niečo neprebehlo v poriadku !</string>
+    <string name="errorGPSPermission">Pre správne fungovanie aplikácie je potrebné povoliť určovanie polohy !</string>
+    <string name="markerSet">Vyplnený bod trasy</string>
+    <string name="yourPosition">Tvoja pozícia</string>
+
+    <string name="errorAddRouteName">Nezadal si meno alebo meno nie je správnej dľžky ( 1 – 24 ) !</string>
+    <string name="errorAddRouteDescription">Nezadal si popis alebo popis nie je správnej dľžky ( 1 – 48) !</string>
+    <string name="errorAddRouteTasks">Nenastavil si dostatok bodov trasy ( 2+ )!</string>
+    <string name="getSharedReferences">shared preferences</string>
+    <string name="getRoutesSharedReferences">RouteArrayList</string>
+    <string name="targetLatitude">TargetLatitude</string>
+    <string name="targetLongitude">TargetLongitude</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="answers">Answers</string>
+    <string name="question">Question</string>
+    <string name="taskAdded">taskAdded</string>
+    <string name="taskAddedTrue">true</string>
+    <string name="errorAddTask">Nevyplnil si všetky polia pre nový bod trasy !</string>
+    <string name="nextAnswerText">Ďalšia odpoveď</string>
+    <string name="saveAnswerText">Pridaj odpoveď</string>
+    <string name="saveTaskText">Ulož zadanie</string>
+    <string name="routeID">RouteID</string>
+    <string name="get_eName">Name</string>
+    <string name="get_eQuestion">Question</string>
+    <string name="get_eTask">Task</string>
+    <string name="get_eRouteID">ID</string>
+    <string name="get_eTaskID">taskID</string>
+    <string name="editTaskName">. bod trasy</string>
+    <string name="editTaskLat">Lat : </string>
+    <string name="editTaskLng">Lng : </string>
+    <string name="editTaskOneAnswer"> odpoveď</string>
+    <string name="editTaskMaxFourAnswers"> odpovede</string>
+    <string name="editTaskMinFiveAnswers"> odpovedí</string>
+    <string name="playerMode">Hra</string>
+    <string name="editorMode">Vytvor / Uprav trasu</string>
+    <string name="turnOnGps">Pre fungovanie aplikácie potrebuješ zapnúť určovanie polohy !</string>
+    <string name="Settings">Nastavenia</string>
+    <string name="exit">Vypnúť</string>
+    <string name="notTurnOnGps">Nezapnem ale nebude fungovať !</string>
+    <string name="playerMapScreenRouteID">RouteID</string>
+    <string name="playerMapScreenTaskArrayList">TaskList</string>
+    <string name="playerMapScreenQuestion">Question</string>
+    <string name="finishedTask">Finished</string>
+    <string name="got_stars">stars</string>
+    <string name="finishedTaskResult">true</string>
+    <string name="finishedRouteZeroStar">Dokončil si trasu, počas trasy si nenazbieral ani jednu hviezdu !</string>
+    <string name="finishedRouteStars">Dokončil si trasu, počas trasy si nazbieral </string>
+    <string name="oneStar">hviezdu.</string>
+    <string name="maxFourStar"> hviezdy.</string>
+    <string name="minFiveStar"> hviezd.</string>
+    <string name="you">Ty</string>
+    <string name="target">Tvoj cieľ</string>
+    <string name="outside">Si ešte ďaleko od bodu !</string>
+    <string name="inside">Si v blízkosti bodu !</string>
+    <!-- END CODE -->
+
+    <!-- START LAYOUT -->
+    <string name="routeName">Názov trasy</string>
+    <string name="routeDescription">Opis trasy</string>
+    <string name="routeAddDate">Dátum vytvorenia trasy</string>
+    <string name="finishedRouteCreate">Uložiť trasu</string>
+    <string name="maxDescription">Maximálne 48 znakov !</string>
+    <string name="maxName">Maximálne 24 znakov !</string>
+    <string name="createTaskTitle">Pridanie zadania</string>
+    <string name="createTaskDescription">Pre pridanie zadania stačí napisať otázku, k otázke možnosti odpovedí a označiť pri odpovedi či sa jedná o správnu odpoveď</string>
+    <string name="createTaskQuestion">Otázka</string>
+    <string name="createTaskAnswer">Odpoveď</string>
+    <string name="createTaskGoodAnswer">Správna odpoveď</string>
+    <string name="editRouteName">Názov trasy</string>
+    <string name="editRouteDescription">Opis trasy</string>
+    <string name="editTaskQuestion">Otázka</string>
+    <string name="editTaskAnswer1">1. odpoveď</string>
+    <string name="editTaskAnswer2">2. odpoveď</string>
+    <string name="editTaskAnswer3">3. odpoveď</string>
+    <string name="editTaskAnswer4">4. odpoveď</string>
+    <string name="editTaskAnswer5">5. odpoveď</string>
+    <string name="editTaskAnswer6">6. odpoveď</string>
+    <string name="mainPageGameName">Zábavné GPS</string>
+    <string name="mainPageGameDescription">Hra je určená pre kreatívnych študentov, ktorí môžu vytvárať GPS trasy pre svojích rovesníkov ako aj zahrať sa už existujúce trasy</string>
+    <string name="mainEditorTitle">Dostupné trasy</string>
+    <string name="mainEditorDescription">Pre úpravu trasy kliknete na trasu a pre pridanie novej trasy stlačte tlačidlo + </string>
+    <string name="mainEditorAddBtn">+</string>
+    <string name="mainPlayerTitle">Trasy</string>
+    <string name="mainPlayerDescription">Pre výber stačí kliknúť na trasu</string>
+    <string name="playerMapScreenYLat">Lat :</string>
+    <string name="playerMapScreenYourLocation">Tvoja pozícia: </string>
+    <string name="playerMapScreenYLng">Lon :</string>
+    <string name="playerMapScreenTargetLocation">Nasledujúci bod: </string>
+    <string name="playerMapScreenTLat">Lat :</string>
+    <string name="playerMapScreenTLng">Lon :</string>
+    <string name="btnTaskActivityDone">Odpovedať</string>
+    <!-- END LAYOUT -->
+
+
+    <string name="yourMarkerText">Toto je tvoja pozícia</string>
+    <string name="markerSetText">Tento bod trasy si už vyplnil</string>
+    <string name="markerUnsetText">Tento bod trasy si ešte nevyplnil</string>
+
+
+    <!-- Refactored strings START-->
+    <string name="FinishScreenFinishRouteText">Úvodná obrazovka</string>
+    <string name="FinishScreenFinishRoute">Prejsť</string>
+    <string name="editTaskDone">Ulož zmeny</string>
+    <string name="editRoute">Ulož zmeny</string>
+    <string name="markerTitle">. bod trasy</string>
+    <string name="finishedRouteDeleteLastMarker">Odstráň posledný marker</string>
+    <string name="errorDeleteMarker">Nemáš čo zmazať, keď si ešte nepridal bod na mapu !</string>
+    <string name="newRouteName">newRouteName</string>
+    <string name="newRouteDescription">newRouteDescription</string>
+    <string name="newRouteTaskCoordinates">newRouteTaskCoordinates</string>
+    <string name="saveRoute">Ulož trasu</string>
+    <string name="newRouteTaskCount">TaskCount</string>
+    <string name="errorPositionNotFound">Tvoja pozícia sa nenačítala správne ! </string>
+    <string name="alertDialogBackPressTitle">Stlačil si tlačidlo späť !</string>
+    <string name="alertDialogAddRouteTitle">Pridanie trasy</string>
+    <string name="alertDialogAddRouteMessage">Keď uložíš trasu, neskôr už nemôžeš pridať ďalšie body do trasy !</string>
+    <string name="alertDialogAddRoutePositiveButton">Pridanie trasy</string>
+    <string name="alertDialogAddRouteNegativeButton">Zostať</string>
+    <string name="alertDialogDeleteButtonPressTitle">Stlačil si tlačidlo zmazať !</string>
+    <string name="alertDialogMessageBackPressPlayerMapScreen">Si si istý, že chceš opustiť hru ? Tvoje dosiehnuté hviezdy sa uložia, ale nabudúce budeš musieť začať trasu odznova !</string>
+    <string name="alertDialogMessageBackPressCreateRouteMapScreen">Si si istý, že chceš opustiť vytváranie trasy ? Tvoja rozpracovaná trasa sa uloží a vytvoria sa zadania automaticky, ktoré budeš vedieť neskôr upravovať !</string>
+    <string name="alertDialogMessageBackPressTaskScreen">Keď teraz opustíš zadanie, dostaneš 0 hviez a nebudeš mať ďalšiu možnosť splniť zadanie !</string>
+    <string name="alertDialogMessageBackPressEditRouteScreen">Keď teraz opustíš upravovanie trasy, tak sa ti zmeny, ktoré si vykonal neuložia ! Si si istý, že chceš odísť bez uloženia zmien ?</string>
+    <string name="alertDialogMessageBackPressEditTaskScreen">Keď teraz opustíš upravovanie zadania, tak sa ti zmeny, ktoré si vykonal neuložia ! Si si istý, že chceš odísť bez uloženia zmien ?</string>
+    <string name="alertDialogDeleteButtonPressMessage">Naozaj chceš zmazať trasu, aj napriek tomu, že nebudeš mať možnosť ju obnoviť a znovu hrať ?</string>
+    <string name="alertDialogBackPressPlayerMapScreenPositiveButton">Opustiť</string>
+    <string name="alertDialogBackPressEditPositiveButton">Opustiť bez uloženia</string>
+    <string name="alertDialogBackPressPlayerMapScreenNegativeButton">Zostať</string>
+    <string name="alertDialogBackPressEditNegativeButton">Zrušiť</string>
+    <string name="alertDialogDeleteButtonPressPositiveButton">Zmazať</string>
+    <string name="alertDialogDeleteButtonPressNegativeButton">Nechať</string>
+    <string name="alertDialogMessage">alertDialogMessage</string>
+    <string name="applicationDescribe">Popis aplikácie</string>
+    <string name="autoCreatedAnswer">Automaticky vytvorená odpoveď </string>
+    <string name="autoCreatedQuestion">Automaticky vytvorená otázka !</string>
+    <string name="errorMinimumTaskSize">Nemôžes zmazať toto zadanie, lebo každá trasa potrebuje aspoň dve zadania !</string>
+    <string name="alertDialogDeleteTaskButtonPress">Naozaj chceš zmazať zadanie, aj napriek tomu, že nebudeš mať možnosť ju obnoviť ?</string>
+
+    <!-- Refactored strings END-->
+
+    <!-- Description strings Start-->
+    <string name="descTitle">Popis Aplikácie</string>
+    <string name="descDesc">V popise aplikácie nájdeš opis základných funkcií aplikácie aj s obrázkami.</string>
+    <string name="desc1">Hlavná stránka aplikácie</string>
+    <string name="desc2">Na hlavnej stránke máš možnosť vybrať medzi možnosťami, zahrať si hru alebo si vytvoríť vlastnú trasu.</string>
+    <string name="desc3">Zahraj hru / Výber trasy</string>
+    <string name="desc4">Na obrázku vidíš výpis všetkých hotových trás. Pre spustenie stačí kliknúť na trasu. </string>
+    <string name="desc5">Hracia mapa</string>
+    <string name="desc6">Na tejto mape vidíš dve označené body, jeden si ty a druhý je bod, ku ktorému sa musíš dostať.</string>
+    <string name="desc7">Keď sa dostaneš do dostatočnej blízkosti bodu, tak sa ti objaví zadanie, ktoré musíš splniť.</string>
+    <string name="desc8">Zadanie</string>
+    <string name="desc9">V tejto časti aplikácie máš za úlohu vybrať si správne odpovede, ale pozor, možno že ani jedna odpoveď nie je správna.</string>
+    <string name="desc10">Zlá odpoveď</string>
+    <string name="desc11">Keď odpovieš zle na otázku, plný počet to už nebude ! Pri každej zlej odpovedi ti vyhasne hviezda, keď odpovieš trikrát zle automaticky máš 0 hviezdičiek, ale pokračuješ ďalej na trase.</string>
+    <string name="desc12">Koniec hry</string>
+    <string name="desc13">V aplikácii sa zobrazí táto obrazovka, keď prejdeš celú trasu, na obrazovke je informatívne vypísané, koľko hviezdičiek si nazbieral.</string>
+    <string name="desc14">Vytvor / Uprav trasu</string>
+    <string name="desc15">Do tejto časti aplikácie sa dostaneš z hlavnej stránky, kde si vyberieš možnosť pre vytváranie a upravovanie trás.</string>
+    <string name="desc16">Zmazanie trasy</string>
+    <string name="desc17">Keď chceš zmazať trasu stačí kliknúť na červené X pri danej trase, potom sa ti objaví hlásenie, či naozaj chceš zmazať a po potvrdení sa trasa zmaže.</string>
+    <string name="desc18">Upravenie trasy</string>
+    <string name="desc19">Pre upravenie trasy stačí, keď stlačíme danú trasu a tam sa už objavia možnosti pre úpravu danej trasy. Pre upravenie zadania stačí stlačít vybraté zadanie a už aj máš možnosť upravovať, mazanie zadania v trase funguje rovnako, ako keď chceme zmazať celú trasu.</string>
+    <string name="desc20">Upravenie zadania v danej trase</string>
+    <string name="desc21">Pre upravenie stačí, keď prepišeš otázku, upravíš odpovede a na konci stlačís „Ulož zmeny“.</string>
+    <string name="desc22">Vytvárať novú mapu môžeme v časti aplikácie, ktorú už poznáme z časti zmazania a upravovania trás. Pre vytvorenie novej trasy stačí kliknút na zelené „+“.</string>
+    <string name="desc22_5">Vytváranie trasy, časť mapa</string>
+    <string name="desc23">V tejto časti sa zadáva názov, popis trasy a všetky body trasy, ktoré budeme musieť počas plnenia trasy prejsť.</string>
+    <string name="desc24">Určite si zadal všetky body na mape</string>
+    <string name="desc25">Zmazať body vieš pri úprave trasy, pridávať nové body nie, takže treba si byť istý, že všetky body sme pridali. </string>
+    <string name="desc26">Vytvorenie zadania</string>
+    <string name="desc27">Pre vytvorenie zadania stačí vyplniť otázku a potom k nej pridať možné odpovede, ak odpoveď je správna, tak treba zaškrtnúť „Správna odpoveď“. Vyplníme všetky zadania a trasa je hotová.</string>
+    <string name="desc28">Vytvorenie trasy </string>
+    <string name="desc29">Je tu možnosť aby sa zadania vyplnili automaticky, tak isto ako v predchádzajucej časti aj tu treba zadať názov trasy, popis trasy a označiť jednotlivé časti trasy.</string>
+    <string name="desc30">Uložíme trasu.</string>
+    <string name="desc31">Znova nás upozorní, že už iné body na trasu nebudeme vedieť pridať.</string>
+    <string name="desc32">Automatické vyplnenie zadaní</string>
+    <string name="desc33">Pre automatické vyplnenie zadaní stačí, keď stlačíme tlačítko „Späť“ na zariadení.</string>
+    <string name="desc34">Informácia</string>
+    <string name="desc35">Infomuje nás, že trasa sa uloží a jednotlivé zadania sa vyplnia automaticky. Pri automatickom dokončení zadania máme vždy 4 možné odpovede. </string>
+    <string name="desc36">Úprava automaticky vyplneného zadania</string>
+    <string name="desc37">Úprava tejto trasy funguje rovnako ako úprava trasy, ktorú sme my vypĺňali.</string>
+    <string name="desc38">Koniec</string>
+    <string name="desc39">Ďakujem, že si dočítal popis aplikácie.</string>
+    <!-- Refactored strings END-->
+
+</resources>

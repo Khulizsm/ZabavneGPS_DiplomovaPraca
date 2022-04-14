@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTaskActivity"
+    android:background="@color/Blue_Cola">
+
+    <TextView
+        android:id="@+id/tv_CreateTaskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/createTaskTitle"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_CreateTaskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_CreateTaskTitle"
+        android:text="@string/createTaskDescription"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_CreateTaskTaskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_CreateTaskDescription"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_CreateTaskQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_CreateTaskTaskName"
+        android:text="@string/createTaskQuestion"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:id="@+id/et_CreateTaskQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_CreateTaskQuestion" />
+
+
+    <TextView
+        android:id="@+id/tv_CreateTaskAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_CreateTaskQuestion"
+        android:text="@string/createTaskAnswer"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+
+
+
+    <EditText
+        android:id="@+id/et_CreateTaskAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_CreateTaskAnswer"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+
+    <CheckBox
+        android:id="@+id/cb_CreateTaskAnswer"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/createTaskGoodAnswer"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_CreateTaskAnswer" />
+
+    <Button
+        android:id="@+id/btn_CreateTaskAddAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_CreateTaskAnswer"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_style"/>
+
+    <Button
+        android:id="@+id/btn_CreateTaskAddTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_CreateTaskAddAnswer"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_style"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

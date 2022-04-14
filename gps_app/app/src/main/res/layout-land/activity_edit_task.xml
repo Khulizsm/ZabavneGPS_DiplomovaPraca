@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTaskActivity"
+    android:background="@color/Blue_Cola">
+
+
+    <TextView
+        android:id="@+id/tv_EditTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+         android:id="@+id/tv_EditTaskQuestion"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskName"
+         android:layout_marginTop="8dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:text="@string/editTaskQuestion"
+         android:textSize="16sp"
+         android:textStyle="italic|bold"/>
+
+    <EditText
+         android:id="@+id/et_EditTaskQuestion"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskQuestion"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:textSize="16sp"
+         android:textStyle="italic|bold"/>
+
+    <TextView
+         android:id="@+id/tv_EditTaskAnswer1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toStartOf="@+id/tv_EditTaskAnswer2"
+         app:layout_constraintTop_toBottomOf="@id/et_EditTaskQuestion"
+         android:layout_marginTop="8dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:text="@string/editTaskAnswer1"
+         android:textSize="16sp"
+         android:textStyle="italic|bold"/>
+
+
+    <EditText
+        android:id="@+id/et_EditTaskAnswer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toStartOf="@id/cb_EditTaskAnswer1"
+        app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer1"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+     <CheckBox
+         android:id="@+id/cb_EditTaskAnswer1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toStartOf="@+id/tv_EditTaskAnswer2"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer1"
+         android:layout_marginEnd="25dp"
+         android:layout_marginTop="10dp"/>
+
+
+     <TextView
+         android:id="@+id/tv_EditTaskAnswer2"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toEndOf="@+id/tv_EditTaskAnswer1"
+         app:layout_constraintTop_toBottomOf="@id/et_EditTaskQuestion"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginTop="8dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:text="@string/editTaskAnswer2"
+         android:textSize="16sp"
+         android:textStyle="italic|bold"/>
+
+     <EditText
+      android:id="@+id/et_EditTaskAnswer2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="5dp"
+      android:textSize="16sp"
+      android:textStyle="italic|bold"
+      app:layout_constraintEnd_toStartOf="@id/cb_EditTaskAnswer2"
+      app:layout_constraintStart_toEndOf="@id/cb_EditTaskAnswer1"
+      app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer2"/>
+
+     <CheckBox
+         android:id="@+id/cb_EditTaskAnswer2"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer2"
+         android:layout_marginEnd="25dp"
+         android:layout_marginTop="10dp" />
+
+
+     <TextView
+         android:id="@+id/tv_EditTaskAnswer3"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toStartOf="@+id/tv_EditTaskAnswer2"
+         app:layout_constraintTop_toBottomOf="@id/et_EditTaskAnswer1"
+         android:layout_marginTop="8dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:text="@string/editTaskAnswer3"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+
+     <EditText
+         android:id="@+id/et_EditTaskAnswer3"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toStartOf="@id/cb_EditTaskAnswer3"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer3"
+         app:layout_constraintStart_toStartOf="parent"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="5dp"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+     <CheckBox
+         android:id="@+id/cb_EditTaskAnswer3"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toStartOf="@+id/tv_EditTaskAnswer2"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer3"
+         android:layout_marginEnd="25dp"
+         android:layout_marginTop="10dp"/>
+
+     <TextView
+         android:id="@+id/tv_EditTaskAnswer4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toEndOf="@+id/tv_EditTaskAnswer3"
+         app:layout_constraintTop_toBottomOf="@id/et_EditTaskAnswer2"
+         android:layout_marginTop="8dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:text="@string/editTaskAnswer4"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+
+     <EditText
+         android:id="@+id/et_EditTaskAnswer4"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toStartOf="@id/cb_EditTaskAnswer4"
+         app:layout_constraintStart_toEndOf="@id/cb_EditTaskAnswer3"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer4"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="5dp"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+
+     <CheckBox
+         android:id="@+id/cb_EditTaskAnswer4"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer4"
+         android:layout_marginEnd="25dp"
+         android:layout_marginTop="10dp" />
+
+
+     <TextView
+         android:id="@+id/tv_EditTaskAnswer5"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toStartOf="@+id/tv_EditTaskAnswer4"
+         app:layout_constraintTop_toBottomOf="@id/et_EditTaskAnswer3"
+         android:layout_marginTop="8dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:text="@string/editTaskAnswer5"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+     <EditText
+         android:id="@+id/et_EditTaskAnswer5"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toStartOf="@id/cb_EditTaskAnswer5"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer5"
+         app:layout_constraintStart_toStartOf="parent"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="5dp"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+     <CheckBox
+         android:id="@+id/cb_EditTaskAnswer5"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toStartOf="@+id/tv_EditTaskAnswer2"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer5"
+         android:layout_marginEnd="25dp"
+         android:layout_marginTop="10dp"/>
+
+     <TextView
+         android:id="@+id/tv_EditTaskAnswer6"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toEndOf="@+id/tv_EditTaskAnswer5"
+         app:layout_constraintTop_toBottomOf="@id/et_EditTaskAnswer4"
+         android:layout_marginTop="8dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:text="@string/editTaskAnswer6"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+     <EditText
+         android:id="@+id/et_EditTaskAnswer6"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toStartOf="@id/cb_EditTaskAnswer6"
+         app:layout_constraintStart_toEndOf="@id/cb_EditTaskAnswer5"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer6"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="5dp"
+         android:textSize="16sp"
+         android:textStyle="italic|bold" />
+
+     <CheckBox
+         android:id="@+id/cb_EditTaskAnswer6"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/tv_EditTaskAnswer6"
+         android:layout_marginEnd="25dp"
+         android:layout_marginTop="10dp" />
+
+
+
+    <Button
+        android:id="@+id/btn_editTask"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="12dp"
+        android:text="@string/editTaskDone"
+        app:layout_constraintTop_toBottomOf="@id/et_EditTaskAnswer6"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

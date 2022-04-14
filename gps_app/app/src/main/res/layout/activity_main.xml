@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_Cola"
+    android:color = "@color/black"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_MainPageLogo"
+        android:layout_width="241dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_RouteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_MainPageLogo"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:text="@string/mainPageGameName"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/tv_gameDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RouteName"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:text="@string/mainPageGameDescription"
+        />
+
+    <Button
+        android:id="@+id/btn_MainPagePlayerMode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gameDescription"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:background="@drawable/button_style"/>
+
+    <Button
+        android:id="@+id/btn_MainPageCreativeMode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_MainPagePlayerMode"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:background="@drawable/button_style"/>
+
+    <Button
+        android:id="@+id/btn_MainPageApplicationDescribe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_MainPageCreativeMode"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:background= "@drawable/button_style"
+        />
+
+    <Button
+        android:id="@+id/btn_MainPageExit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_MainPageApplicationDescribe"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:background= "@drawable/button_style"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

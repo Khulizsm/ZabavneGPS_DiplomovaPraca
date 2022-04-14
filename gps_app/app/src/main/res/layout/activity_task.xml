@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_Cola"
+    tools:context=".TaskActivity">
+
+    <LinearLayout
+        android:id="@+id/star_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/one_star"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            />
+
+        <ImageView
+            android:id="@+id/two_star"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            />
+
+        <ImageView
+            android:id="@+id/three_star"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_TaskQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/star_line"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cb_TaskCheckBox1"
+        android:textStyle="italic|bold"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <CheckBox
+        android:id="@+id/cb_TaskCheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_TaskQuestion"
+        app:layout_constraintBottom_toTopOf="@id/cb_TaskCheckBox2"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_TaskCheckBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_TaskCheckBox1"
+        app:layout_constraintBottom_toTopOf="@id/cb_TaskCheckBox3"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_TaskCheckBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_TaskCheckBox2"
+        app:layout_constraintBottom_toTopOf="@id/cb_TaskCheckBox4"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/cb_TaskCheckBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_TaskCheckBox3"
+        app:layout_constraintBottom_toTopOf="@id/cb_TaskCheckBox5"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/cb_TaskCheckBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_TaskCheckBox4"
+        app:layout_constraintBottom_toTopOf="@id/cb_TaskCheckBox6"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textStyle="italic"/>
+
+    <CheckBox
+        android:id="@+id/cb_TaskCheckBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_TaskCheckBox5"
+        app:layout_constraintBottom_toTopOf="@id/btn_TaskFinished"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_TaskFinished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnTaskActivityDone"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/button_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_TaskCheckBox6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

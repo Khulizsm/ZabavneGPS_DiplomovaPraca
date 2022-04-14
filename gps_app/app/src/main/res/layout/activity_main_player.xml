@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_Cola"
+    tools:context="com.example.gps_app.MainPlayerActivity">
+
+    <TextView
+        android:id="@+id/tv_MainPlayerTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/mainPlayerTitle"
+        android:textStyle="bold|italic"
+        android:textSize="28sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_MainPlayerDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_below="@+id/tv_MainPlayerTitle"
+        android:text="@string/mainPlayerDescription"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+
+    <ScrollView
+        android:id="@+id/sv_MainPlayerRoutesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_MainPlayerDescription"
+        android:layout_marginBottom="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_MainPlayerExistingRoutes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_style"
+    android:layout_margin="5dp"
+    android:id="@+id/constrain_item"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_RouteLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/tv_RouteName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@id/iv_RouteLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/tv_RouteLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/iv_RouteLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_RouteName"
+        app:layout_constraintBottom_toTopOf="@id/tv_RouteAddDate"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/tv_RouteAddDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintStart_toEndOf="@id/iv_RouteLogo"
+        app:layout_constraintTop_toBottomOf="@id/tv_RouteLocation"
+        app:layout_constraintEnd_toStartOf="@+id/iv_RouteStartCount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+
+    <ImageView
+        android:id="@+id/iv_RouteStartCount"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/pedestrian"
+        app:layout_constraintTop_toBottomOf="@id/tv_RouteLocation"
+        app:layout_constraintEnd_toStartOf="@+id/tv_RouteStartCount"/>
+
+    <TextView
+        android:id="@+id/tv_RouteStartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_RouteLocation"
+        app:layout_constraintEnd_toStartOf="@+id/iv_RouteStar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_RouteStar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/tv_RouteLocation"
+        app:layout_constraintEnd_toStartOf="@+id/tv_RouteStarCount"/>
+
+    <TextView
+        android:id="@+id/tv_RouteStarCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_RouteLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

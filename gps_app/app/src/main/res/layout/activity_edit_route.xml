@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRouteActivity"
+    android:background="@color/Blue_Cola">
+
+
+    <TextView
+        android:id="@+id/tv_EditRouteNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"/>
+
+
+    <TextView
+        android:id="@+id/tv_EditRouteTitleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_EditRouteNameTitle"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+
+    <TextView
+        android:id="@+id/tv_EditRouteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_EditRouteTitleDescription"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/editRouteName"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+
+    <EditText
+        android:id="@+id/et_EditRouteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_EditRouteName"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+
+    <TextView
+        android:id="@+id/tv_EditRouteDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_EditRouteName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        android:text="@string/editRouteDescription"/>
+
+
+    <EditText
+        android:id="@+id/et_EditRouteDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_EditRouteDescription"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"/>
+
+    <ScrollView
+        android:id="@+id/sv_editRoutesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_editRoute"
+        android:layout_below="@+id/et_EditRouteDescription"
+        android:layout_marginBottom="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cl_editRoutesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_editRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_style"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
